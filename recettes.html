@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YTECH - Recettes</title>
+
+    <link rel="stylesheet" href="ressources/css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="dashboard.html">Tableau de bord</a>
+        <a href="recettes.html">Recettes</a>
+        <a href="depenses.html">Dépenses</a>
+        <a href="operations.html">Opérations</a>
+        <a href="categories.html">Catégories</a>
+        <a href="utilisateurs.html">Utilisateurs</a>
+    </nav>
+
+    <h1>Recettes</h1>
+
+    <h2>Ajouter une recette</h2>
+
+    <form onsubmit="ajouterRecette(event)">
+        <label for="date">Date</label>
+        <input type="date" id="date">
+
+        <label for="montant">Montant</label>
+        <input type="number" id="montant" placeholder="Ex : 10000">
+
+        <label for="categorie">Catégorie</label>
+        <select id="categorie">
+            <option value="">Choisir une catégorie</option>
+            <option>Impression</option>
+            <option>Sublimation</option>
+            <option>Design graphique</option>
+            <option>Autres services</option>
+        </select>
+
+        <label for="libelle">Libellé</label>
+        <input type="text" id="libelle" placeholder="Description de la recette">
+
+        <button type="submit">Ajouter la recette</button>
+    </form>
+
+    <h2>Liste des recettes</h2>
+
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Catégorie</th>
+        <th>Libellé</th>
+    </tr>
+
+    <tbody id="liste-recettes">
+    </tbody>
+</table>
+
+
+</table>
+
+
+    <script src="ressources/js/script.js"></script>
+
+</body>
+</html>

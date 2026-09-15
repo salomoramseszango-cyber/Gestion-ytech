@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YTECH - Dépenses</title>
+
+    <link rel="stylesheet" href="ressources/css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="dashboard.html">Tableau de bord</a>
+        <a href="recettes.html">Recettes</a>
+        <a href="depenses.html">Dépenses</a>
+        <a href="operations.html">Opérations</a>
+        <a href="categories.html">Catégories</a>
+        <a href="utilisateurs.html">Utilisateurs</a>
+    </nav>
+
+    <h1>Dépenses</h1>
+
+    <h2>Ajouter une dépense</h2>
+
+    <form>
+        <label for="date">Date</label>
+        <input type="date" id="date">
+
+        <label for="montant">Montant</label>
+        <input type="number" id="montant" placeholder="Ex : 5000">
+
+        <label for="categorie">Catégorie</label>
+        <select id="categorie">
+            <option value="">Choisir une catégorie</option>
+            <option>Papier</option>
+            <option>Encre</option>
+            <option>Maintenance</option>
+            <option>Transport</option>
+            <option>Électricité</option>
+            <option>Communication</option>
+            <option>Autres dépenses</option>
+        </select>
+
+        <label for="libelle">Libellé</label>
+        <input type="text" id="libelle" placeholder="Description de la dépense">
+
+        <button type="submit">Ajouter la dépense</button>
+    </form>
+
+    <h2>Liste des dépenses</h2>
+
+<table>
+    <tr>
+        <th>Date</th>
+        <th>Montant</th>
+        <th>Catégorie</th>
+        <th>Libellé</th>
+    </tr>
+
+    <tr>
+        <td>14/09/2026</td>
+        <td>5 000 FCFA</td>
+        <td>Papier</td>
+        <td>Achat de papier</td>
+    </tr>
+
+    <tr>
+        <td>13/09/2026</td>
+        <td>3 000 FCFA</td>
+        <td>Transport</td>
+        <td>Déplacement</td>
+    </tr>
+</table>
+
+    <script src="ressources/js/script.js"></script>
+
+</body>
+</html>
